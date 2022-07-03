@@ -19,7 +19,7 @@ hist = model.fit(X_train, Y_train, epochs = 10, batch_size = 64, validation_data
 ```
 with
 ```
-hist = model.fit(X_train, Y_train, epochs = 50, batch_size = 64, validation_data=(X_val, Y_val), callbacks = [tf.keras.callbacks.EarlyStopping(
-monitor = 'val_loss', patience = 5, restore_best_weights = True, verbose = 1), tf.keras.callbacks.ReduceLROnPlateau(
-monitor = 'val_loss', patience = 8, verbose = 1)])
+hist = model.fit(X_train, Y_train, epochs = 30, batch_size = 64, validation_data=(X_val, Y_val), callbacks = [tf.keras.callbacks.EarlyStopping(
+monitor = 'val_loss', patience = 8, restore_best_weights = True, verbose = 1)])
 ```
+This update increased accuracy of training set to 98.41%, Validation set accuracy to 99.18%, but did not hurt the performance much on test set, test set accuracy 95.043%.
