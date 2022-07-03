@@ -11,3 +11,15 @@ Model is saved is 'German_traffic_signal.h5'
 # Links
 Link for GTSRB - German Traffic Sign Recognition Benchmark Dataset on kaggle: https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign?select=Train.csv  
 Drive Link containing pretrained model, dataset and jupyter notebook: https://drive.google.com/drive/folders/1LY6pi2NMzrfpJlPIRrXFFR5jghFveaF-?usp=sharing
+
+# Update
+In the recent iteration I have updated  
+```
+hist = model.fit(X_train, Y_train, epochs = 50, batch_size = 64, validation_data=(X_val, Y_val))
+```
+with
+```
+hist = model.fit(X_train, Y_train, epochs = 50, batch_size = 64, validation_data=(X_val, Y_val), callbacks = [tf.keras.callbacks.EarlyStopping(
+monitor = 'val_loss', patience = 5, restore_best_weights = True, verbose = 1), tf.keras.callbacks.ReduceLROnPlateau(
+monitor = 'val_loss', patience = 8, verbose = 1)])
+```
