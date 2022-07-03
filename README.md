@@ -15,7 +15,7 @@ Drive Link containing pretrained model, dataset and jupyter notebook: https://dr
 # Update
 In the recent iteration I have updated  
 ```
-hist = model.fit(X_train, Y_train, epochs = 50, batch_size = 64, validation_data=(X_val, Y_val))
+hist = model.fit(X_train, Y_train, epochs = 10, batch_size = 64, validation_data=(X_val, Y_val))
 ```
 with
 ```
