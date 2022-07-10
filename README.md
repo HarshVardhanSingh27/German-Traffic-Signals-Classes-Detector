@@ -10,7 +10,6 @@ Train.csv file contains coordinates of ROI in each training image.
 Model is saved as 'German_traffic_signal.h5'  
 # Links
 Link for GTSRB - German Traffic Sign Recognition Benchmark Dataset on kaggle: https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign?select=Train.csv  
-Drive Link containing pretrained model, dataset and jupyter notebook: https://drive.google.com/drive/folders/1LY6pi2NMzrfpJlPIRrXFFR5jghFveaF-?usp=sharing
 
 # Update
 In the recent iteration I have updated  
